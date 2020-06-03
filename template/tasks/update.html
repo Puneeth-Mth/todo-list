@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+{% load static %}
+
+<html>
+<head>
+	<title>UPADTE</title>
+
+<link rel="stylesheet" type="text/css" href="{% static "css/style.css" %}">
+
+</head>
+<body>
+<center>
+
+<div class="head">
+	<h3>Update Task</h3>
+
+</div>
+
+<form method="post">
+	{{form.as_p}}
+
+	<input type="submit" class="button" value="Update">
+
+	{% csrf_token %}
+
+</form>
+</center>
+</body>
+</html>
+
+
+
